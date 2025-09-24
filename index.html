@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MAIN CONTAINER -->
+    <div class="main_container">
+
+        <!-- APPLY BOX -->
+        <div class="apply_box">
+
+            <!-- HEADING & COMPANY NAME -->
+        <header>
+            <h1>Job Application
+                <h4>ABC Company Pvt. Limited</h4>
+            </h1>
+        </header>
+            
+            <!-- FORM AREA -->
+            <form action="response.html">
+
+                <!-- FORM -->
+                <div class="form_container">
+
+                    <!-- FIRST NAME -->
+                    <div class="form_control">
+                        <label for="first_name">First Name</label>
+                        <input id="first_name" placeholder="Enter Your First Name..">
+                    </div>
+
+                    <!-- MIDDLE NAME -->
+                    <div class="form_control">
+                        <label for="middle_name">Middle Name (Optional)</label>
+                        <input id="middle_name" placeholder="Enter Your Middle Name..">
+                    </div>
+
+                    <!-- LAST NAME -->
+                    <div class="form_control">
+                        <label for="last_name">Last Name</label>
+                        <input id="last_name" placeholder="Enter Your Last Name..">
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="form_control">
+                        <label for="email">Email</label>
+                        <input id="email" placeholder="Enter Your Email ID..">
+                    </div>
+
+                    <!-- PHONE NO. -->
+                    <div class="form_control">
+                        <label for="phone">Phone No.</label>
+                        <input type="number" id="phone" placeholder="Enter Your Phone No. Here..">
+                    </div>
+
+                    <!-- JOB ROLE -->
+                    <div class="form_control">
+                        <label for="job_role">Job Role</label>
+                        <select id="job_role">
+                            <option value="">Select Job Role</option>
+                            <option value="DataAnalyst">Data Analyst</option>
+                            <option value="BusinessAnalyst">Business Analyst</option>
+                            <option value="FrontendDeveloper">Frontend Developer</option>
+                            <option value="BackendDeveloper">Backend Developer</option>
+                            <option value="FullStackDeveloper">FullStack Developer</option>
+                            <option value="PythonProgrammer">Python Programmer</option>
+                            <option value="GraphicDesigner">Graphic Designer</option>
+                        </select>
+                    </div>
+
+                    <!-- HIGHEST QUALIFICATION -->
+                    <div class="form_control">
+                        <label for="qualification">Highest Qualification</label>
+                        <input id="qualification" placeholder="Eg. Graduate, Post-Graduate, MBA..">
+                    </div>
+
+                    <!-- HIGHEST QUALIFICATION PERCENTAGE OR CGPA -->
+                    <div class="form_control">
+                        <label for="marks">Highest Qualification % or CGPA</label>
+                        <input id="marks" placeholder="Enter Your % or CGPA Here..">
+                    </div>
+
+                    <!-- ADDRESS -->
+                    <div class="address_control">
+                        <label for="address">Address</label>
+                        <textarea id="address" rows="5" cols="70" placeholder="Enter Address.."></textarea>
+                    </div>
+
+                    <!-- CITY -->
+                    <div class="form_control">
+                        <label for="city">City</label>
+                        <input id="city" placeholder="Enter Your City Name..">
+                    </div>   
+                    
+                    <!-- STATE -->
+                    <div class="form_control">
+                        <label for="state">State</label>
+                        <input id="state" placeholder="Enter Your State Name..">
+                    </div> 
+
+                    <!-- COUNTRY -->
+                    <div class="form_control">
+                        <label for="country">Country</label>
+                        <input id="country" placeholder="Enter Your Country Name..">
+                    </div> 
+
+                    <!-- PINCODE -->
+                    <div class="form_control">
+                        <label for="pincode">PinCode</label>
+                        <input type="number" id="pincode" placeholder="Enter Your PinCode Here..">
+                    </div>
+                    
+                    <!-- DATE OF BIRTH -->
+                    <div class="form_control">
+                        <label for="date">Date of Birth</label>
+                        <input type="date" id="date">
+                    </div>
+                    
+                    <!-- CV UPLOAD -->
+                    <div class="form_control">
+                        <label for="cv_upload">Upload Your CV</label>
+                        <input type="file" id="cv_upload">
+                    </div>
+                </div>
+
+                <!-- APPLICATION SUBMIT BUTTON -->
+                <!-- <div class="button_container">
+                    <a href="PROJECT/Project Job Application/response.html"><button type="submit">Apply</button></a> 
+                </div> -->
+
+                <form action="PROJECT/Project Job Application/response.html">
+                    <div class="button_container">
+                        <button type="submit">Apply</button>
+                    </div>
+                </form>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

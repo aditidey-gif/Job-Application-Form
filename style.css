@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: palegreen;
+}
+
+
+/* HEADER */
+header{
+    background-color: #ffb700;
+    text-align: center;
+}
+
+/** MAIN_CONTAINER **/
+.main_container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/** APPLY BOX **/
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 70px;
+    box-shadow: 4px 3px 5px rgba(4, 4, 4, 0.7);
+    border-radius: 10px;
+}
+
+/** FORM **/
+.form_container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: bolder;
+    background-color: #ffb700;
+    color: rgb(8, 8, 8);
+    margin-bottom: 1px;
+}
+
+input,
+select,
+textarea{
+    padding: 6px 10px;
+    border: 1px solid rgb(216, 104, 24);
+}
+
+::placeholder{
+    color: gray;
+}
+
+input,select,textarea:focus{
+    outline-color: #ff2600;
+}
+
+.button_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button{
+    background-color: #ed0707;
+    color: rgb(253, 252, 252);
+    border: transparent solid 2px;
+    padding: 10px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: #8b21c8;
+    border: 2px solid none;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+.address_control{
+    grid-column: 1/ span 2;
+}
+
+.address_control textarea{
+    width: 100%;
+}
+
+@media (max-width: 460px) {
+    .address_control{
+    grid-column: 1/ span 1;
+}
+}
